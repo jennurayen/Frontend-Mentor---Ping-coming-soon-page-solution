@@ -1,0 +1,137 @@
+*{
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
+body {
+    min-height: 100vh;
+}
+
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    width: 86px;
+    height: 24px;
+    margin-bottom: 50px;
+}
+h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+h1 span{
+    color: var(--Gray);
+    font-weight: 300;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+form{
+    position: relative;
+
+    margin-bottom: 60px;
+}
+
+.email-add {
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid hsl(0, 0%, 85%);
+    padding: 10px 30px;
+    width: calc(100% - 220px);
+}
+.error{
+    font-style: italic;
+    position: absolute;
+    left: 20px;
+    bottom: -35px;
+    color: var(--LightRed);
+    display: none;
+}
+.btn-submit {
+    max-width: 200px;
+    
+    background: var(--Blue);
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 50px var(--PaleBlue);
+}
+.btn-submit:active {
+    background: hsl(223, 79%, 68%);
+
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.social div{
+    cursor: pointer;
+    color: var(--Blue);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+    margin: 15px 5px;
+}
+.social div:active{
+    color: white;
+background: var(--Blue);
+}
+
+.copyrignt{
+    color: var(--Gray);
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 575px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 16px;
+    }
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.email-add {
+    width: 80%;
+    margin-bottom: 20px;
+}
+.error{
+    position: static;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.btn-submit {
+    max-width:  80%;
+}
+.footer{
+    margin-top: 50px;
+}
+.copyrignt{
+    font-size: 16px;
+}
+    
+}
